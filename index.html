@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minecraft Kupfergolem — Galerie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="logo">Kupfergolem</h1>
+      <p class="tag">Minecraft Fanseite</p>
+    </div>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="#gallery">Galerie</a>
+      <a href="#features">Infos</a>
+      <a href="#about">Über</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-hidden="false">
+      <div class="hero-inner">
+        <h2 class="hero-title">Der Kupfergolem</h2>
+        <p class="hero-sub">Einliebenswerter Schildkröten‑ähnlicher Wächter aus Kupfer</p>
+        <div class="hero-badges">
+          <span class="badge">Modell: Minecraft</span>
+          <span class="badge">Material: Kupfer</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <h3 class="section-title">Galerie</h3>
+      <p class="section-intro">Bewege die Maus über ein Bild, um es zu vergrößern. Klick öffnet die Großansicht.</p>
+
+      <div class="gallery" id="gGallery">
+        <!-- Kopiere/ersetzte die Bilder in images/ -->
+        <button class="gallery-item" data-index="0" aria-label="Kupfergolem Bild 1" data-caption="Kupfergolem - Blick von vorne">
+          <img src="images/golem1.jpg" alt="Kupfergolem - Bild 1">
+        </button>
+
+        <button class="gallery-item" data-index="1" aria-label="Kupfergolem Bild 2" data-caption="Kupfergolem - im Sonnenlicht">
+          <img src="images/golem2.jpg" alt="Kupfergolem - Bild 2">
+        </button>
+
+        <button class="gallery-item" data-index="2" aria-label="Kupfergolem Bild 3" data-caption="Kupfergolem - Detailansicht">
+          <img src="images/golem3.jpg" alt="Kupfergolem - Bild 3">
+        </button>
+
+        <button class="gallery-item" data-index="3" aria-label="Kupfergolem Bild 4" data-caption="Kupfergolem - Aktion">
+          <img src="images/golem4.jpg" alt="Kupfergolem - Bild 4">
+        </button>
+
+        <!-- Füge mehr .gallery-item Buttons hinzu nach Bedarf -->
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h3 class="section-title">Effekte & Funktionen</h3>
+      <ul>
+        <li>Hover-Zoom (vergrößern beim Überfahren mit der Maus)</li>
+        <li>Lightbox mit Titel, Pfeilnavigation und Esc‑Schließen</li>
+        <li>Tilt‑/Parallax‑Effekt beim Bewegen der Maus über ein Bild</li>
+        <li>Scroll‑Reveal: Inhalte erscheinen beim Hereinscrollen</li>
+        <li>Responsive Grid und Tastatur-Navigation (Tab / Pfeiltasten)</li>
+      </ul>
+    </section>
+
+    <section id="about" class="about">
+      <h3 class="section-title">Über diese Seite</h3>
+      <p>Dieses Template ist als Grundlage gedacht — du kannst Bilder, Texte und Farben einfach anpassen. Die Galerie nutzt reine Web‑Techniken (HTML/CSS/JS), keine externen JS‑Frameworks.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Erstellt von Sebi2010-90 - Template © 2026</small>
+  </footer>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lb-close" aria-label="Schließen">&times;</button>
+    <button class="lb-prev" aria-label="Vorheriges Bild">&#10094;</button>
+    <div class="lb-content">
+      <img src="" alt="" id="lb-image">
+      <p id="lb-caption" class="lb-caption"></p>
+    </div>
+    <button class="lb-next" aria-label="Nächstes Bild">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
